@@ -1,0 +1,49 @@
+[gd_scene load_steps=7 format=3 uid="uid://uqnuhtdftq45"]
+
+[ext_resource type="Texture2D" uid="uid://c2dsqj8ws8w66" path="res://assets/sprites/scubba.png" id="1_n0ux3"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a0big"]
+atlas = ExtResource("1_n0ux3")
+region = Rect2(0, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yedru"]
+atlas = ExtResource("1_n0ux3")
+region = Rect2(16, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m7tl3"]
+atlas = ExtResource("1_n0ux3")
+region = Rect2(32, 0, 16, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nqqyl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a0big")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yedru")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m7tl3")
+}],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_els15"]
+radius = 6.0
+height = 56.0
+
+[node name="player_main" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(13, -26)
+scale = Vector2(2.625, 2.625)
+sprite_frames = SubResource("SpriteFrames_nqqyl")
+animation = &"new_animation"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(10, -29)
+shape = SubResource("CapsuleShape2D_els15")
