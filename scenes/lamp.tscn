@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://di4jue20umeu0"]
+
+[ext_resource type="Texture2D" uid="uid://bvvdlps51ja2l" path="res://all/sprites/lab_tileset.png" id="1_bpykr"]
+[ext_resource type="Texture2D" uid="uid://daa3cmfp5wdmi" path="res://assets/textures/2d_lights_and_shadows_neutral_point_light.webp" id="2_vexqr"]
+
+[node name="Lamp" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_bpykr")
+region_enabled = true
+region_rect = Rect2(144, 56, 16, 40)
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(-2, -14)
+texture = ExtResource("2_vexqr")
+texture_scale = 0.21

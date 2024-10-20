@@ -1,0 +1,49 @@
+[gd_scene load_steps=7 format=3 uid="uid://c47bljlpew27x"]
+
+[ext_resource type="PackedScene" uid="uid://bulwkk7fqmmkm" path="res://scenes/text_exposition.tscn" id="3_nhmai"]
+[ext_resource type="PackedScene" uid="uid://bwy4c1wivwi2u" path="res://scenes/descendScene.tscn" id="4_eorai"]
+[ext_resource type="Script" path="res://scenes/game.gd" id="5_76m0d"]
+[ext_resource type="Script" path="res://scenes/color_rect.gd" id="7_37yny"]
+[ext_resource type="AudioStream" uid="uid://cx2nhbt6et8dm" path="res://assets/music/eerie piano.mp3" id="8_5dxln"]
+[ext_resource type="Script" path="res://scenes/audio_stream_player_2d.gd" id="9_ox8yq"]
+
+[node name="Game" type="Node"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+
+[node name="TextExposition" parent="CanvasLayer2" instance=ExtResource("3_nhmai")]
+
+[node name="CanvasLayer3" type="CanvasLayer" parent="."]
+
+[node name="TextExposition" parent="CanvasLayer3" instance=ExtResource("3_nhmai")]
+content = "It's safe to go for the chicken than risk your whole life for half a hunger bar more..."
+last_text = true
+
+[node name="DescendScene" parent="." instance=ExtResource("4_eorai")]
+position = Vector2(539, 357)
+script = ExtResource("5_76m0d")
+
+[node name="CanvasLayer4" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer4"]
+offset_left = -67.0001
+offset_top = -60.0
+offset_right = -27.0001
+offset_bottom = -20.0
+scale = Vector2(30.5957, 20.7115)
+color = Color(1, 1, 1, 0)
+script = ExtResource("7_37yny")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_5dxln")
+autoplay = true
+parameters/looping = true
+script = ExtResource("9_ox8yq")
+
+[connection signal="next_scene" from="CanvasLayer3/TextExposition" to="CanvasLayer4/ColorRect" method="_on_text_exposition_next_scene"]
+[connection signal="next_scene" from="CanvasLayer3/TextExposition" to="AudioStreamPlayer2D" method="_on_text_exposition_next_scene"]
+
+[editable path="DescendScene"]
+[editable path="DescendScene/player_main"]

@@ -18,6 +18,9 @@ func _unhandled_input(event):
 		if event.pressed and event.keycode == KEY_SPACE:
 			if loaded == content.length():
 				isMoving = 1
+			elif loaded >= 2:
+				$Label.text = content
+				loaded = content.length()
 			
 
 # Called when the node enters the scene tree for the first time.

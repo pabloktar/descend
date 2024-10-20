@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://c5seelyiujgkg"]
+[gd_scene load_steps=10 format=3 uid="uid://c5seelyiujgkg"]
 
 [ext_resource type="Script" path="res://scenes/menu.gd" id="1_obcfm"]
 [ext_resource type="FontFile" uid="uid://dysv6ocxxt07u" path="res://assets/fonts/dogica/OTF/dogicapixel.otf" id="2_d1jpa"]
@@ -8,6 +8,7 @@
 [ext_resource type="Script" path="res://scenes/game.gd" id="4_gpawc"]
 [ext_resource type="Script" path="res://scenes/point_light_2d.gd" id="5_b2j2a"]
 [ext_resource type="Script" path="res://scenes/color_rect.gd" id="7_q0bh3"]
+[ext_resource type="Script" path="res://scenes/audio_stream_player_2d.gd" id="9_l6mo6"]
 
 [node name="Game" type="Node"]
 
@@ -72,10 +73,12 @@ script = ExtResource("7_q0bh3")
 stream = ExtResource("3_raija")
 autoplay = true
 parameters/looping = true
+script = ExtResource("9_l6mo6")
 
 [connection signal="start" from="CanvasLayer/Menu" to="CanvasLayer2/TextExposition" method="_on_menu_start"]
 [connection signal="start" from="CanvasLayer/Menu" to="DescendScene/player_main/PointLight2D" method="_on_menu_start"]
 [connection signal="next_scene" from="CanvasLayer3/TextExposition" to="CanvasLayer4/ColorRect" method="_on_text_exposition_next_scene"]
+[connection signal="next_scene" from="CanvasLayer3/TextExposition" to="AudioStreamPlayer2D" method="_on_text_exposition_next_scene"]
 
 [editable path="DescendScene"]
 [editable path="DescendScene/player_main"]
