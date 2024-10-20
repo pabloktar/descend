@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://bulwkk7fqmmkm"]
+
+[ext_resource type="Script" path="res://scenes/text.gd" id="1_cn08m"]
+[ext_resource type="FontFile" uid="uid://dysv6ocxxt07u" path="res://assets/fonts/dogica/OTF/dogicapixel.otf" id="2_mfbe1"]
+[ext_resource type="Script" path="res://scenes/label.gd" id="3_sdx2g"]
+
+[node name="TextExposition" type="Node2D"]
+position = Vector2(560, 434)
+scale = Vector2(4, 4)
+script = ExtResource("1_cn08m")
+speed = 200
+content = "Here in parkour civilization, no one chooses to go for the beef..."
+metadata/_edit_group_ = true
+
+[node name="Label" type="Label" parent="."]
+offset_left = -25.5
+offset_top = -31.75
+offset_right = 103.5
+offset_bottom = 43.25
+theme_override_fonts/font = ExtResource("2_mfbe1")
+theme_override_font_sizes/font_size = 11
+text = "Here in parkour civilization, no one chooses to go for the beef..."
+horizontal_alignment = 1
+autowrap_mode = 3
+script = ExtResource("3_sdx2g")
