@@ -1,0 +1,51 @@
+[gd_scene load_steps=8 format=3 uid="uid://fftbxbd2ea4n"]
+
+[ext_resource type="Script" path="res://scripts/hiding_object.gd" id="1_ahtn4"]
+[ext_resource type="Texture2D" uid="uid://cdpgrb8fmg0xk" path="res://assets/sprites/crate.png" id="2_b1e5u"]
+[ext_resource type="Texture2D" uid="uid://bnicr0i7pr018" path="res://assets/sprites/lab_tileset.png" id="3_l4kh5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pme28"]
+atlas = ExtResource("2_b1e5u")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g2qmg"]
+atlas = ExtResource("3_l4kh5")
+region = Rect2(112, 128, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vcxf3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pme28")
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g2qmg")
+}],
+"loop": true,
+"name": &"outline",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qr0e7"]
+size = Vector2(56, 24)
+
+[node name="Crate" type="Node2D"]
+script = ExtResource("1_ahtn4")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_vcxf3")
+autoplay = "default"
+
+[node name="Area2D" type="Area2D" parent="AnimatedSprite2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2D/Area2D"]
+position = Vector2(0, -2)
+shape = SubResource("RectangleShape2D_qr0e7")
+
+[connection signal="body_entered" from="AnimatedSprite2D/Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="AnimatedSprite2D/Area2D" to="." method="_on_area_2d_body_exited"]

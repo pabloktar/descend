@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=4 uid="uid://ckewow6rkcv37"]
+
+[ext_resource type="PackedScene" uid="uid://bivocdhl4hglo" path="res://all/scenes/player.tscn" id="1_unfbv"]
+[ext_resource type="PackedScene" uid="uid://c50v2k4y1i6s6" path="res://all/scenes/world.tscn" id="2_bgray"]
+[ext_resource type="PackedScene" uid="uid://72lahp6erd7x" path="res://scenes/barrel.tscn" id="3_00ujl"]
+[ext_resource type="PackedScene" uid="uid://fftbxbd2ea4n" path="res://scenes/crate.tscn" id="4_idoch"]
+[ext_resource type="PackedScene" uid="uid://di4jue20umeu0" path="res://scenes/lamp.tscn" id="5_vkv6o"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_unfbv")]
+z_index = 1
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+zoom = Vector2(4, 4)
+
+[node name="layer1" parent="." instance=ExtResource("2_bgray")]
+visibility_layer = 2
+tile_map_data = PackedByteArray("AAD3//z/AAAAAAAAAAD3//3/AAAAAAAAAAD3//7/AAAAAAAAAAD3////AAAAAAAAAAD3/wAAAAAAAAAAAAD3/wEAAAABAAAAAAD4/wEAAAACAAAAAAD5/wEAAAADAAAAAAD6/wEAAAABAAAAAAD7/wEAAAACAAAAAAD8/wEAAAADAAAAAAD9/wEAAAABAAAAAAD+/wEAAAACAAAAAAD//wEAAAADAAAAAAAAAAEAAAABAAAAAAABAAEAAAACAAAAAAACAAEAAAADAAAAAAADAAEAAAABAAAAAAAEAAEAAAACAAAAAAAFAAEAAAADAAAAAAAGAAEAAAABAAAAAAAHAAEAAAACAAAAAAAIAAEAAAADAAAAAAAJAAEAAAABAAAAAAAKAAEAAAACAAAAAAALAAEAAAADAAAAAAAMAAEAAAABAAAAAAANAAEAAAACAAAAAAAOAAEAAAADAAAAAAAPAAEAAAABAAAAAAAQAAEAAAACAAAAAAARAAEAAAADAAAAAAASAAEAAAABAAAAAAATAAEAAAACAAAAAAAUAAEAAAADAAAAAAAVAAEAAAABAAAAAAAWAAEAAAACAAAAAAAXAAEAAAADAAAAAAAXAAAAAAAAAAAAAAAXAP//AAAAAAAAAAAXAP7/AAAAAAAAAAAXAP3/AAAAAAAAAAAXAPz/AAAAAAAAAAAXAPv/AAAAAAAAAAAEAP//AAAAAAEAAAAEAAAAAAAAAAIAAAAFAP//AAABAAEAAAAFAAAAAAABAAIAAAALAP//AAAAAAEAAAALAAAAAAAAAAIAAAAMAP//AAABAAEAAAAMAAAAAAABAAIAAAANAP7/AAAJAAMAAAANAP//AAAJAAQAAAANAAAAAAAJAAUAAAA=")
+
+[node name="Barrel" parent="." instance=ExtResource("3_00ujl")]
+visibility_layer = 2
+position = Vector2(139, 6)
+
+[node name="Crate" parent="." instance=ExtResource("4_idoch")]
+visibility_layer = 2
+position = Vector2(-35, 7)
+
+[node name="Lamp" parent="." instance=ExtResource("5_vkv6o")]
+position = Vector2(54, -4)
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color(0.666667, 0.666667, 0.666667, 1)
