@@ -1,14 +1,18 @@
 [gd_scene load_steps=6 format=3 uid="uid://d3ln4a7n1isjv"]
 
-[ext_resource type="Texture2D" uid="uid://c75ggvutpjl4u" path="res://Art Assets, SpookyGameJam/lab_tileset.png" id="1_gmp50"]
-[ext_resource type="Texture2D" uid="uid://s04iaca75b3r" path="res://Art Assets, SpookyGameJam/door_closing.png" id="2_rpgss"]
+[ext_resource type="Texture2D" uid="uid://c75ggvutpjl4u" path="res://Art Assets, SpookyGameJam/lab_tileset.png" id="1_6v1i7"]
+[ext_resource type="Texture2D" uid="uid://s04iaca75b3r" path="res://Art Assets, SpookyGameJam/door_closing.png" id="2_k4fi3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jmdxo"]
-texture = ExtResource("1_gmp50")
+texture = ExtResource("1_6v1i7")
 0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 5:0/0 = 0
 6:0/0 = 0
 7:0/0 = 0
@@ -71,7 +75,7 @@ texture = ExtResource("1_gmp50")
 9:8/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_npfgt"]
-texture = ExtResource("2_rpgss")
+texture = ExtResource("2_k4fi3")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -88,6 +92,7 @@ texture = ExtResource("2_rpgss")
 6:1/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_ttpsh"]
+physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_jmdxo")
 sources/1 = SubResource("TileSetAtlasSource_npfgt")
 
