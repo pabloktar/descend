@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bivocdhl4hglo"]
 
-[ext_resource type="Texture2D" uid="uid://py20qev4undt" path="res://all/sprites/looking_around-sheet_standing.png" id="1_4a6gl"]
-[ext_resource type="Script" path="res://all/scripts/character_body_2d.gd" id="1_78ftf"]
+[ext_resource type="Texture2D" uid="uid://py20qev4undt" path="res://ville_hiding/sprites/looking_around-sheet_standing.png" id="1_4a6gl"]
+[ext_resource type="Script" path="res://ville_hiding/scripts/character_body_2d.gd" id="1_78ftf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_duoph"]
 size = Vector2(6, 21.5)

@@ -1,8 +1,8 @@
 [gd_scene load_steps=8 format=3 uid="uid://fftbxbd2ea4n"]
 
-[ext_resource type="Script" path="res://all/scripts/hiding_object.gd" id="1_ahtn4"]
-[ext_resource type="Texture2D" uid="uid://b3qjqbn7v5bb2" path="res://all/sprites/crate.png" id="2_b1e5u"]
-[ext_resource type="Texture2D" uid="uid://bvvdlps51ja2l" path="res://all/sprites/lab_tileset.png" id="3_l4kh5"]
+[ext_resource type="Script" path="res://ville_hiding/scripts/hiding_object.gd" id="1_ahtn4"]
+[ext_resource type="Texture2D" uid="uid://b3qjqbn7v5bb2" path="res://ville_hiding/sprites/crate.png" id="2_b1e5u"]
+[ext_resource type="Texture2D" uid="uid://bvvdlps51ja2l" path="res://ville_hiding/sprites/lab_tileset.png" id="3_l4kh5"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pme28"]
 atlas = ExtResource("2_b1e5u")

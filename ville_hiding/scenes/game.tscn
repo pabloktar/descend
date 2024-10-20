@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=4 uid="uid://ckewow6rkcv37"]
 
-[ext_resource type="PackedScene" uid="uid://bivocdhl4hglo" path="res://all/scenes/player.tscn" id="1_unfbv"]
-[ext_resource type="PackedScene" uid="uid://c50v2k4y1i6s6" path="res://all/scenes/world.tscn" id="2_bgray"]
-[ext_resource type="PackedScene" uid="uid://72lahp6erd7x" path="res://scenes/barrel.tscn" id="3_00ujl"]
-[ext_resource type="PackedScene" uid="uid://fftbxbd2ea4n" path="res://scenes/crate.tscn" id="4_idoch"]
-[ext_resource type="PackedScene" uid="uid://di4jue20umeu0" path="res://scenes/lamp.tscn" id="5_vkv6o"]
+[ext_resource type="PackedScene" uid="uid://bivocdhl4hglo" path="res://ville_hiding/scenes/player.tscn" id="1_unfbv"]
+[ext_resource type="PackedScene" uid="uid://c50v2k4y1i6s6" path="res://ville_hiding/scenes/world.tscn" id="2_bgray"]
+[ext_resource type="PackedScene" uid="uid://72lahp6erd7x" path="res://ville_hiding/scenes/barrel.tscn" id="3_00ujl"]
+[ext_resource type="PackedScene" uid="uid://fftbxbd2ea4n" path="res://ville_hiding/scenes/crate.tscn" id="4_idoch"]
+[ext_resource type="PackedScene" path="res://scenes/lamp.tscn" id="5_vkv6o"]
 
 [node name="Node2D" type="Node2D"]
 

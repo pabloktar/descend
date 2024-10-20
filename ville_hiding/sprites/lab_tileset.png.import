@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ce6vhnnaf5p0k"
-path="res://.godot/imported/outlined_barrel.png-d18a7e9432218f876bc2041c2728d938.ctex"
+uid="uid://bvvdlps51ja2l"
+path="res://.godot/imported/lab_tileset.png-9510ea50de54a98060da7f4eb23b1aef.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://all/sprites/outlined_barrel.png"
-dest_files=["res://.godot/imported/outlined_barrel.png-d18a7e9432218f876bc2041c2728d938.ctex"]
+source_file="res://ville_hiding/sprites/lab_tileset.png"
+dest_files=["res://.godot/imported/lab_tileset.png-9510ea50de54a98060da7f4eb23b1aef.ctex"]
 
 [params]
 

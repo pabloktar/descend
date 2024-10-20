@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cx5fp18ifv14k"
-path="res://.godot/imported/scientst.png-9e44f86b1f0477ee27efdf22783dfdb3.ctex"
+path="res://.godot/imported/scientst.png-91d0561347fb028a3ee8b186b4f54527.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://all/sprites/scientst.png"
-dest_files=["res://.godot/imported/scientst.png-9e44f86b1f0477ee27efdf22783dfdb3.ctex"]
+source_file="res://ville_hiding/sprites/scientst.png"
+dest_files=["res://.godot/imported/scientst.png-91d0561347fb028a3ee8b186b4f54527.ctex"]
 
 [params]
 

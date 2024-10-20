@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b3qjqbn7v5bb2"
-path="res://.godot/imported/crate.png-c2e1fe24db12507189b6472d5012d5a4.ctex"
+uid="uid://c75ggvutpjl4u"
+path="res://.godot/imported/lab_tileset.png-64d6a4dcaca9c55113a11cd00e02fa98.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://all/sprites/crate.png"
-dest_files=["res://.godot/imported/crate.png-c2e1fe24db12507189b6472d5012d5a4.ctex"]
+source_file="res://Art Assets, SpookyGameJam/lab_tileset.png"
+dest_files=["res://.godot/imported/lab_tileset.png-64d6a4dcaca9c55113a11cd00e02fa98.ctex"]
 
 [params]
 

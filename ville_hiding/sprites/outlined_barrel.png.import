@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://py20qev4undt"
-path="res://.godot/imported/looking_around-sheet_standing.png-0614da39a59abc40bdb2843fef6c3fa6.ctex"
+uid="uid://ce6vhnnaf5p0k"
+path="res://.godot/imported/outlined_barrel.png-c16247b79c171271592d7e823d5c3fe1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://all/sprites/looking_around-sheet_standing.png"
-dest_files=["res://.godot/imported/looking_around-sheet_standing.png-0614da39a59abc40bdb2843fef6c3fa6.ctex"]
+source_file="res://ville_hiding/sprites/outlined_barrel.png"
+dest_files=["res://.godot/imported/outlined_barrel.png-c16247b79c171271592d7e823d5c3fe1.ctex"]
 
 [params]
 

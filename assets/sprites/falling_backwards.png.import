@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://io53pgq6kku2"
-path="res://.godot/imported/scientist3bleh.png-b46bf2e5ddeba3c8032849450f42c3ee.ctex"
+uid="uid://cc3yry5m67eo5"
+path="res://.godot/imported/falling_backwards.png-3ff918e1b06134e4404cf661de9c6c6d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://all/sprites/scientist3bleh.png"
-dest_files=["res://.godot/imported/scientist3bleh.png-b46bf2e5ddeba3c8032849450f42c3ee.ctex"]
+source_file="res://assets/sprites/falling_backwards.png"
+dest_files=["res://.godot/imported/falling_backwards.png-3ff918e1b06134e4404cf661de9c6c6d.ctex"]
 
 [params]
 
