@@ -46,12 +46,18 @@ metadata/_edit_use_anchors_ = true
 [node name="CanvasLayer2" type="CanvasLayer" parent="."]
 
 [node name="TextExposition" parent="CanvasLayer2" instance=ExtResource("3_y1a8b")]
+content = "It’s cold. It’s dark. Could’ve never imagined any of this."
+
+[node name="CanvasLayer5" type="CanvasLayer" parent="."]
+
+[node name="TextExposition" parent="CanvasLayer5" instance=ExtResource("3_y1a8b")]
+content = "This was never your run-of-the-mill adventure, this was always something big, bigger than me."
 
 [node name="CanvasLayer3" type="CanvasLayer" parent="."]
 
 [node name="TextExposition" parent="CanvasLayer3" instance=ExtResource("3_y1a8b")]
 texture_filter = 1
-content = "It's safe to go for the chicken than risk your whole life for half a hunger bar more..."
+content = "But how could I have stayed away from it? I wanted to be a good son, be a good person. Help everyone. I’m sorry…"
 last_text = true
 
 [node name="DescendScene" parent="." instance=ExtResource("3_l0anc")]

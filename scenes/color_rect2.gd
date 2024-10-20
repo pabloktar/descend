@@ -18,4 +18,4 @@ func _on_text_exposition_next_scene() -> void:
 
 
 func _on_animated_sprite_2d_endthegame() -> void:
-	set_process(true)
+	pass#set_process(true)
