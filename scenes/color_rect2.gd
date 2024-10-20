@@ -10,7 +10,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	color = Color(color.r, color.g, color.b, color.a+0.5*delta)
 	if color.a > 0.99:
-		get_tree().change_scene_to_file("res://scenes/EndScene.tscn")
+		get_tree().quit()
 
 
 func _on_text_exposition_next_scene() -> void:
@@ -18,4 +18,4 @@ func _on_text_exposition_next_scene() -> void:
 
 
 func _on_animated_sprite_2d_endthegame() -> void:
-	set_process(true) # Replace with function body.
+	set_process(true)

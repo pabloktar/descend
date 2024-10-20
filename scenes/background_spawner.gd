@@ -24,3 +24,7 @@ func spawn_bg_instance(offset = OFFSET):
 	bg.position = Vector2.DOWN * offset
 	add_child(bg)
 	print("Background spawned")
+
+
+func _on_timer_timeout() -> void:
+	queue_free()
